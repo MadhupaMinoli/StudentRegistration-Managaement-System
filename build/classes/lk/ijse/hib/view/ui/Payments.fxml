@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hib.view.controller.PaymentsController">
+    <stylesheets>
+        <URL value="@/lk/ijse/hib/view/style/payments.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="522.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="323.0" layoutY="12.0" prefHeight="48.0" prefWidth="261.0" text="Payment Form">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <JFXTextField labelFloat="true" layoutX="24.0" layoutY="60.0" prefHeight="26.0" prefWidth="224.0" promptText="Payment Id" />
+            <DatePicker layoutX="335.0" layoutY="67.0" promptText="Choose a date" />
+            <ComboBox layoutX="24.0" layoutY="110.0" prefHeight="26.0" prefWidth="224.0" promptText="Student Id" />
+            <ComboBox layoutX="24.0" layoutY="149.0" prefHeight="26.0" prefWidth="224.0" promptText="Course Id" />
+            <JFXTextField labelFloat="true" layoutX="323.0" layoutY="110.0" prefHeight="26.0" prefWidth="224.0" promptText="Student Name" />
+            <JFXTextField labelFloat="true" layoutX="323.0" layoutY="149.0" prefHeight="26.0" prefWidth="224.0" promptText="Course Fee" />
+            <JFXTextField labelFloat="true" layoutX="322.0" layoutY="235.0" prefHeight="26.0" prefWidth="224.0" promptText="Amount for a period" />
+            <JFXTextField layoutX="323.0" layoutY="275.0" prefHeight="26.0" prefWidth="224.0" promptText="Due periods" />
+            <JFXTextField layoutX="323.0" layoutY="195.0" prefHeight="26.0" prefWidth="224.0" promptText="Payment Period" />
+            <Line endX="100.0" layoutX="115.0" layoutY="322.0" startX="-100.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

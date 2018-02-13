@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hib.view.controller.CourseRegistrationController">
+    <stylesheets>
+        <URL value="@/lk/ijse/hib/view/style/courseregistration.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="584.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="271.0" layoutY="15.0" prefHeight="50.0" prefWidth="315.0" text="Course Registration">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbStudentId" layoutX="14.0" layoutY="97.0" prefHeight="30.0" prefWidth="212.0" promptText="Student Id" />
+            <JFXComboBox fx:id="cmbCourseId" layoutX="15.0" layoutY="141.0" prefHeight="26.0" prefWidth="212.0" promptText="Course Id" />
+            <JFXTextField fx:id="txtStudentName" labelFloat="true" layoutX="271.0" layoutY="97.0" prefHeight="26.0" prefWidth="212.0" promptText="Student Name" />
+            <JFXTextField fx:id="txtCourseName" labelFloat="true" layoutX="272.0" layoutY="140.0" prefHeight="26.0" prefWidth="212.0" promptText="Course Name" />
+            <JFXTextField labelFloat="true" layoutX="14.0" layoutY="52.0" prefHeight="26.0" prefWidth="212.0" promptText="Registration Id" />
+            <DatePicker fx:id="txtRegistedDate" layoutX="12.0" layoutY="14.0" prefHeight="26.0" prefWidth="212.0" promptText="Choose a date" />
+            <TableView fx:id="tblCourseRegistration" layoutX="17.0" layoutY="367.0" prefHeight="200.0" prefWidth="564.0">
+              <columns>
+                <TableColumn prefWidth="76.0" text="Course Id" />
+                <TableColumn prefWidth="114.0" text="Course Name" />
+                  <TableColumn text="Duration" />
+                  <TableColumn prefWidth="119.0" text="Payment Plan" />
+                  <TableColumn prefWidth="167.0" text="Registered Date" />
+              </columns>
+            </TableView>
+            <JFXTextField fx:id="txtFees" labelFloat="true" layoutX="271.0" layoutY="185.0" prefHeight="26.0" prefWidth="212.0" promptText="Fee" />
+            <JFXTextField fx:id="txtDuration" labelFloat="true" layoutX="271.0" layoutY="229.0" prefHeight="26.0" prefWidth="221.0" promptText="Course Duration " />
+            <JFXComboBox fx:id="cmbPlan" layoutX="14.0" layoutY="273.0" prefHeight="26.0" prefWidth="212.0" promptText="Payment plan" />
+            <Button fx:id="btnRegister" layoutX="436.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnRegisterMouseClicked" prefHeight="59.0" prefWidth="147.0" text="REGISTER" />
+            <JFXTextField layoutX="16.0" layoutY="333.0" prefHeight="26.0" prefWidth="158.0" promptText="REGISTERED COURSES" />
+            <JFXTextField fx:id="txtPeriod" labelFloat="true" layoutX="271.0" layoutY="279.0" promptText="Period" />
+            <JFXButton fx:id="btnAddPlan" layoutX="16.0" layoutY="229.0" onAction="#btnAddPlans" prefHeight="26.0" prefWidth="212.0" text="Add Payment Plans" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

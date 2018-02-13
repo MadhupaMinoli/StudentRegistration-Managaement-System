@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hib.view.controller.DashboardController">
+    <stylesheets>
+        <URL value="@/lk/ijse/hib/view/style/dashboard.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane fx:id="anchorDashboard" layoutX="162.0" prefHeight="400.0" prefWidth="439.0">
+               <children>
+                  <JFXTextField editable="false" focusColor="#a84040" layoutX="30.0" layoutY="101.0" opacity="0.5" prefHeight="37.0" prefWidth="338.0" text="STUDENT REGISTRATION SYSTEM" unFocusColor="#e1000f">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXTextField>
+                  <ImageView fitHeight="319.0" fitWidth="244.0" layoutX="181.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@student.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <GridPane prefHeight="266.0" prefWidth="162.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton onAction="#btnStudentRegistrationMouseClicked" prefHeight="96.0" prefWidth="217.0" text="Student Registration" textFill="#4600f8">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </GridPane.margin></JFXButton>
+                  <JFXButton onAction="#btnCoursesMouseClicked" prefHeight="102.0" prefWidth="184.0" text="Courses" textFill="#0d00fc" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </GridPane.margin></JFXButton>
+                  <JFXButton fx:id="btnCourseRegistration" onAction="#btnCourseRegistrationMouseclicked" prefHeight="101.0" prefWidth="182.0" text="Course Registration" textFill="#1f00ff" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </GridPane.margin></JFXButton>
+                  <JFXButton fx:id="btnPayments" onAction="#btnPaymentsMouseClicked" prefHeight="90.0" prefWidth="185.0" text="Payments" textFill="#270ae4" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
